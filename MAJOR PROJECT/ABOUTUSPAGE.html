@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic-Digital Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<style>
+    body{
+        background-color:  rgb(69,96,150);
+    }
+    h1{
+        font-size: 300%;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 15%;
+        margin-left: 2%;
+    }
+    #value {
+  font: 800 40px system-ui;
+}
+</style>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="HOMEPAGE.html" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Dynamic</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="HOMEPAGE.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="SERVICEPAGE.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page"  href="ABOUTUSPAGE.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="PORTFOLIOPAGE.html">Portfolio</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="CONTACTUSPAGE.html">Contact Us</a>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <h1>Discover
+            the story behind our <br>agency
+            that’s  dedicated
+            to bring <br> your
+            creative vision to
+            life</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZlYqwoFqi38hY3KiTMXAXb828LvZRuUfDGA&usqp=CAU" style="height: 300px; margin-left: 70%; margin-top: -20%;">
+            <div style="height: 130px; width: 400px; margin-left: 35%; background-color:rgb(167, 167, 197);; font-family:monospace; font-size:21px"><p style="margin-top: 5%;margin-left: 3%;">Dynamic was founded in 2015 by a group of passionate people who believed in the power of design to create memorable experiences.</p></div>
+            <div id="value">500</div>
+        </div>
+        <div style="background-color: rgb(69, 96, 150);
+        height: 50px; width: 12%; margin-top: -21%; margin-left: 5%;">
+        <script>
+        function animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+              if (!startTimestamp) startTimestamp = timestamp;
+              const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+              obj.innerHTML = Math.floor(progress * (end - start) + start);
+              if (progress < 1) {
+                window.requestAnimationFrame(step);
+              }
+            };
+            window.requestAnimationFrame(step);
+          }
+          
+          const obj = document.getElementById("value");
+          animateValue(obj, 0, 500, 5000);
+        </script>
+        <h2 style="margin-top:145%;margin-left: 5%;">+ projects</h2> 
+        </div>
+        <div><h4 style=" text-align: center; margin-top: 10%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">OUR VISION</h4>
+            <h4 style="margin-left: 24%;margin-top: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">At Dynamic, our core values define who we are and guide our work</h4>
+            <ul>
+                <div style="text-align: center; margin-left: -40%; margin-top: 5%;">
+                    <i class="bi bi-brush"></i>
+                    <h3>CREATIVE</h3>
+                </div>
+                <div style="text-align: center; margin-left: 0%; margin-top: -5%;">
+                    <i class="bi bi-lightbulb"></i>
+                    <h3>INNOVATIVE</h3>
+                </div>
+                <div style="text-align: center; margin-left: 40%; margin-top: -5%;">
+                    <i class="bi bi-star"></i>
+                    <h3>EXELLENT</h3>
+                </div>
+                <div style="text-align: center; margin-left: -20%; margin-top: 5%;">
+                    <i class="bi bi-heart"></i>
+                    <h3>INEGRITY</h3>
+                </div>
+                <div style="text-align: center; margin-left: 20%; margin-top: -5%;">
+                    <i class="bi bi-person"></i>
+                    <h3>COLLABRATION</h3>
+                    <hr>
+                    <img src="https://nubi.uicore.co/pages/wp-content/uploads/sites/15/2023/04/Pages-Team-Why-Image.webp" style="height: 400px;margin-left: -155%;margin-top: -20%;">
+        <div >
+        <div style="margin-left: -25%;">
+        <i class="bi bi-instagram"></i>
+        <h5 style="font-size: medium;  color: black;" ><a href="https://www.instagram.com/"style="color:black;">I</a>nstagram</h5>
+      </div>
+      <div style="margin-left: -75%; margin-top: -4.7%;">
+        <i class="bi bi-facebook"></i>
+        <h5 style="font-size: medium;  color: black;" ><a href="https://www.facebook.com/"style="color:black;">f</a>acebook</h5>
+      </div>
+      <div style="margin-left: 35%; margin-top: -4.9%;">
+        <i class="bi bi-linkedin"></i>
+        <h5 style="font-size: medium;  color: black;" ><a href="https://www.facebook.com/"style="color:black;">L</a>inkedIn</h5>
+      </div>
+      <div style="margin-top: 2%; margin-left: -24%;">
+      <h5 >Recive our news letters </h5>
+      <i class="bi bi-envelope"></i>
+      <input type="email" placeholder="Youremail-id@gmail.com">
+      <div >
+        <button>Subscribe</button>
+      <hr>
+    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic-Digital Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<style>
+    body{
+        background-color: rgb(69,96,150);
+    }
+    @property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+.div1 {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+.div1::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 100;
+  }
+}
+</style>
+</head>
+<body>
+    <div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="HOMEPAGE.html" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Dynamic</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="HOMEPAGE.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="SERVICEPAGE.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ABOUTUSPAGE.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="PORTFOLIOPAGE.html">Portfolio</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CONTACTUSPAGE.html">Contact Us</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div style="background-color: rgb(184, 180, 219); height: 935px;margin-top: 5%;margin-left: 5%;margin-right: 5%; margin-bottom: 5%;" >
+        <div class="div1" style="margin-left: 7%;"></div><h4 style="margin-left: 3%;margin-top: -3%;">Satisfied Company</h4>
+        <div class="div1" style="margin-left: 67%;"> <h4 style=" margin-left: -10%; margin-top: -6%;">Completed projects</h4></div>
+        <div class="div1" style="margin-left: 37%;"> <h4 style=" margin-left: -8%;">Industry covered</h4></div>
+        <img src="https://nubi.uicore.co/pages/wp-content/uploads/sites/15/2023/04/Pages-Team-Hero-Image-1536x654.webp" style="width: 500px;margin-left: 400px;">
+        <h1 style="text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><b>We are proud of ourselves</b></h1>
+        <hr>
+        <h4 style="text-align: center;">Connect Us</h4>
+      <div style="margin-left: 50%;">
+        <i class="bi bi-instagram"></i>
+        <h5 style="margin-left: -5%; font-size: medium;  color: black;" ><a href="https://www.instagram.com/"style="color:black;">I</a>nstagram</h5>
+      </div>
+      <div style="margin-top: -4.7%;margin-left: 20%;">
+        <i class="bi bi-facebook"></i>
+        <h5 style="margin-left: -3%;font-size: medium;  color: black;" ><a href="https://www.facebook.com/"style="color:black;">f</a>acebook</h5>
+      </div>
+      <div style="margin-left: 70%; margin-top: -4.7%;">
+        <i class="bi bi-linkedin"></i>
+        <h5 style="margin-left: -5%;font-size: medium;  color: black;" ><a href="https://www.facebook.com/"style="color:black;">L</a>inkedIn</h5>
+      </div>
+      <div style="text-align: center;">
+      <h5 >Recive our news letters </h5>
+      <i class="bi bi-envelope"></i>
+      <input type="email" placeholder="Youremail-id@gmail.com">
+      <div >
+        <button>Subscribe</button>
+      <div>
+      <h1>Thank You!</h1>
+      <hr>
+    </div>
+    </div>
+      </div>
+</div>
+</body>
+</html>
